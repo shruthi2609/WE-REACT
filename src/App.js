@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import TodoComponent from "./Components/TodoComponent";
+import LifeCycleMethods from "./Components/LifeCycleMethods";
+import TodoAPI from "./Components/TodoAPI";
+import UnsplashAPI from "./Components/UnsplashAPI";
+import HookEg from "./Components/HooksEg";
+import CounterHooks from "./Components/CounterHooks";
+import NewsAppHooks from "./Components/NewsAppHooks";
+import HooksLifeCycle from "./Components/HooksLifeCycle";
+import Profile from "./Components/Profile";
+import Login from "./Components/Login";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+<div>
+  <Profile> </Profile>
+  <Login></Login> </div>
+);
 }
 
 export default App;
