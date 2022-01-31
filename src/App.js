@@ -8,11 +8,26 @@ import NewsAppHooks from "./Components/NewsAppHooks";
 import HooksLifeCycle from "./Components/HooksLifeCycle";
 import Profile from "./Components/Profile";
 import Login from "./Components/Login";
+import NewsAppAlgolia from "./Components/NewsAppAlgolia";
+import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom"
 function App() {
   return (
 <div>
-  <Profile> </Profile>
-  <Login></Login> </div>
+ <Router>
+   <nav>
+     <Link to="/todo">TodoAPI</Link>
+     <Link to="/imagesearch">UnsplashAPI</Link>
+   </nav>
+   <Routes>
+     <Route path="/todo" element={
+       <TodoAPI></TodoAPI>
+     }></Route>
+     <Route path="/imagesearch" element={
+       <UnsplashAPI></UnsplashAPI>
+     }></Route>
+   </Routes>
+ </Router>
+</div>
 );
 }
 
